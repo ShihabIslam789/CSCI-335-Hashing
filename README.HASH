@@ -1,0 +1,15 @@
+Shihab Islam
+4/13/2021
+CSCI Project 4
+
+PART I: (Linear & Quadratic Probing)
+	The first steps were to write the templates for both Linear aand Quadratic probing. Sicne we are using Hashtables, its easy to visualize a table that the proper steps needed to get from one position on the map to the next. In our case we used strings of words to fill our hashs and made sure to print it out corrected for what was asked. Linear probing was simple as we only needed to go in seuential steps of each of the words from the files. This is why i specifically used FindPos() function to find was postion i would ever be on while the code runs and can modify anything easily that way. Then after change the position by 1 because we are in Linear time.  But the same can't be true in Quadratic Probing file. It need calculaltes more then linear Probing would ever do. therefore we needed more information such as the number of elements in the Hash Table, size of the table, total collisions, load factor, and finally a a probing count to see how long it took to find our word or words by a number. Thus we find Quadratic probing is a better choice in this case to find our words  more efficently and avoids clustering as needed. 
+
+
+Part II: (Double hashing)
+  This type of hashing is a variation of the Quadratic probing we did in the previous part. So a lot of the code remains the same, but a R value was needed this time to properly search for words. Intially I used arbitray values that are less then what my table could hold. Personally the number 83 worked really well for me. But users can also use their own input if they wanted. The constructors haave been modified to allow user input. ALso just by the given code the 5th argument is given by user to change the rvalue. 
+
+
+Part III: (spell check)
+     My spell checker uses Quadratic probing implementation as the hash table due to the collisions being easy to work with. As a result all inputs entered
+from the dictionary being used with the code. I made sure that the words use the characters dictated by letters. Puntucation and special chracters were removed from that start and end of words. Then transfer all letters to be lowercase  letters to fit the text file in wordsEnglish.txt. Eventually which I moved on the 3  different cases of misspelled words. Whether its missing, wrong, or misplaced letters.  
